@@ -448,7 +448,7 @@ function startTime() {
 	h = checkTime(h);
 	m = checkTime(m);
 	s = checkTime(s);
-	document.getElementById('time').innerHTML = "<a class=\"time\" href=\"homepage.html\">‧" + h + ":" + m + ":" + s + "‧</a>";
+	document.getElementById('time').innerHTML = "‧" + h + ":" + m + ":" + s + "‧";
 	t = setTimeout(function() {
 		startTime()
 	}, 500);
