@@ -1,0 +1,66 @@
+body{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='730' preserveAspectRatio='none' viewBox='0 0 1440 750'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1076%26quot%3b)' fill='none'%3e%3crect width='1440' height='750' x='0' y='0' fill='rgba(0%2c 0%2c 0%2c 1)'%3e%3c/rect%3e%3cpath d='M -21.79622314204761%2c388 C 19.4%2c333.8 101.8%2c101.6 184.2037768579524%2c117 C 266.6%2c132.4 307.8%2c446.2 390.2037768579524%2c465 C 472.6%2c483.8 513.8%2c170.2 596.2037768579523%2c211 C 678.6%2c251.8 719.8%2c644.6 802.2037768579523%2c669 C 884.6%2c693.4 925.8%2c357.6 1008.2037768579523%2c333 C 1090.6%2c308.4 1131.8%2c573.4 1214.2037768579523%2c546 C 1296.6%2c518.6 1337.8%2c223.6 1420.2037768579523%2c196 C 1502.6%2c168.4 1622.24%2c418.8 1626.2037768579523%2c408 C 1630.16%2c397.2 1477.24%2c195.2 1440%2c142' stroke='rgba(38%2c 91%2c 145%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -112.09312992321122%2c324 C -70.89%2c369.8 11.51%2c545 93.90687007678878%2c553 C 176.31%2c561 217.51%2c360.6 299.9068700767888%2c364 C 382.31%2c367.4 423.51%2c591.6 505.9068700767888%2c570 C 588.31%2c548.4 629.51%2c257.4 711.9068700767888%2c256 C 794.31%2c254.6 835.51%2c581.4 917.9068700767888%2c563 C 1000.31%2c544.6 1041.51%2c200.2 1123.906870076789%2c164 C 1206.31%2c127.8 1247.51%2c389.8 1329.906870076789%2c382 C 1412.31%2c374.2 1513.89%2c86.2 1535.906870076789%2c125 C 1557.93%2c163.8 1459.18%2c485.8 1440%2c576' stroke='rgba(38%2c 91%2c 145%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1076'%3e%3crect width='1440' height='750' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
+	color:white;
+	background-color: black;
+	font-family: 'Averia Serif Libre', cursive;
+	overflow: hidden;
+}
+
+.ecoute{
+	font-size: 1.8em;
+	color:whitesmoke;
+}
+
+.time{
+	font-size: 2em;
+	text-align: center;
+	color:darkgrey;
+	margin-top : 50px;
+	margin-bottom : 90px;
+}
+
+.emoji{
+	font-family: 'Noto Emoji', sans-serif;
+	color:lightsalmon;
+}
+
+span{
+	color:lightsalmon;
+}
+
+img {
+	width: 300px;
+	height: 300px;
+	outline: 1px solid #555;
+	margin-right: 25px;
+}
+
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+#data {
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+}
+
+.dataImage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.dataChanson {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 50%;
+}
+
+::selection {
+  color: black;
+  background: yellow;
+}
