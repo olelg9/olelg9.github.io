@@ -125,7 +125,7 @@ function updateData(newTrack, newArtist, newAlbum, newImage, newUrl, newNowPlayi
 		trackPlayCount = -1;
 		trackPlayCountDisplayed = -1;
 		UrlChanson = newUrl;
-		document.getElementById("image").innerHTML = "<a title=\"maxres\" href=\"lastfm-cover.html\"><img src=" + newImage + "></img></a>";
+		document.getElementById("image").innerHTML = "<img src=" + newImage + ">";
 		document.getElementById("track").innerHTML = "<a class=\"ecouteTrack\" title=" + newUrl + "  href=" + newUrl + ">" + emojiTrack + "</a> " + newTrack; 
 		document.getElementById("artist").innerHTML = "<a href=" + getArtistUrl(newArtist) + ">" + emojiArtist + "</a> " + newArtist;
 		if (newAlbum != albumWankil && newAlbum != emojiNull){
