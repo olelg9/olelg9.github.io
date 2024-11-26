@@ -1,8 +1,8 @@
 startTime();
 const username = (new URLSearchParams(window.location.search)).get('user');
 var apiKey = "e8d5900f153e285520e5c7ab178111ee";
-var recentTrackURL = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&limit=5"  + "&extended=1" + "&api_key=" + apiKey + "&format=json";
-var URL = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&api_key=" + apiKey + "&format=json";
+var recentTrackURL = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&limit=5"  + "&extended=1" + "&api_key=" + apiKey + "&format=json";
+var URL = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&api_key=" + apiKey + "&format=json";
 
 var intervalleRechercheNouveauScrobble;
 var intervalleMiseAJourNombreEcoute;
@@ -227,7 +227,7 @@ function getTrackPlaycount(trackName, artistName){
 	var trackEncode = encodeURIComponent(trackName);
 	var artistEncode = encodeURIComponent(artistName);
 
-	var urlReq = "http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key="+ apiKey + "&username=" + username + "&artist=" + artistEncode + "&track=" + trackEncode + "&format=json";
+	var urlReq = "https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key="+ apiKey + "&username=" + username + "&artist=" + artistEncode + "&track=" + trackEncode + "&format=json";
 	xhr.open("GET", urlReq, true);
 	xhr.send();
 }
@@ -307,7 +307,7 @@ function getArtistPlaycount(artistName){
 
 	var artistEncode = encodeURIComponent(artistName);
 
-	var urlReq = "http://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key="+ apiKey + "&username=" + username + "&artist=" + artistEncode + "&format=json";
+	var urlReq = "https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key="+ apiKey + "&username=" + username + "&artist=" + artistEncode + "&format=json";
 	xhr.open("GET", urlReq, true);
 	xhr.send();
 }
@@ -358,7 +358,7 @@ function getAlbumPlaycount(albumName){
 	var artistEncode = encodeURIComponent(artisteAffiche);
 	var albumEncode = encodeURIComponent(albumName);
 
-	var urlReq = "http://ws.audioscrobbler.com/2.0/?method=album.getInfo&api_key="+ apiKey + "&username=" + username + "&artist=" + artistEncode + "&album=" + albumEncode + "&format=json";
+	var urlReq = "https://ws.audioscrobbler.com/2.0/?method=album.getInfo&api_key="+ apiKey + "&username=" + username + "&artist=" + artistEncode + "&album=" + albumEncode + "&format=json";
 	xhr.open("GET", urlReq, true);
 	xhr.send();
 }
